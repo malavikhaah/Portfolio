@@ -267,7 +267,7 @@ function App() {
             variants={itemVariants}
           >
             <div style={{ position: 'relative' }}>
-              <img src="/profile.jpeg" alt="Malavika K C" className="profile-img" onError={(e) => { e.target.src = 'https://via.placeholder.com/300'; e.target.onerror = null; }} />
+              <img src={`${import.meta.env.BASE_URL}profile.jpeg`} alt="Malavika K C" className="profile-img" onError={(e) => { e.target.src = 'https://via.placeholder.com/300'; e.target.onerror = null; }} />
 
               <motion.div
                 className="floating-status-pill"
